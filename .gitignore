@@ -29,7 +29,10 @@ lib
 
 # Build folders
 build/
-src/
+dist/
+CloudNode/
 
 # NW.js cache folder
 cache/
+
+

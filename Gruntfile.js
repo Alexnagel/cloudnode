@@ -203,6 +203,12 @@ module.exports = function(grunt) {
             expand: true
           }
         ]
+      },
+      compile_webkit_files: {
+        src: '**',
+        dest: '<%= compile_dir%>/webkit/',
+        cwd: './src/webkit',
+        expand:true
       }
     },
 
@@ -479,7 +485,7 @@ module.exports = function(grunt) {
       'copy:build_appjs', 'copy:build_appcss', 'copy:build_vendorjs', 'index:build']);
 
   grunt.registerTask( 'compile', [
-        'clean:compile', 'copy:compile_assets', 'copy:compile_package', 'ngAnnotate', 'concat:compile_js', 'concat:compile_css', 'cssmin:combine', 'index:compile', 'uglify'
+        'clean:compile', 'copy:compile_assets', 'copy:compile_package', 'copy:compile_webkit_files', 'ngAnnotate', 'concat:compile_js', 'concat:compile_css', 'cssmin:combine', 'index:compile', 'uglify'
     ]);
 
   grunt.renameTask( 'watch', 'delta' );

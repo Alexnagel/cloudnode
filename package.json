@@ -8,7 +8,7 @@
   },
   "author": "Alex Nagelkerke",
   "respository": "https://github.com/Alexnagel/cloudnode",
-  "license": "apache",
+  "license": "Apache-2.0",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
