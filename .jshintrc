@@ -1,0 +1,20 @@
+{
+  "globalstrict": true,
+  "esnext": true,
+  "camelcase": true,
+  "eqeqeq": true,
+  "indent": 2,
+  "newcap": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "angular": false,
+    "module": false,
+    "inject": false,
+    "console": false,
+    "require": false,
+    "window": false,
+    "document": false
+  }
+}
